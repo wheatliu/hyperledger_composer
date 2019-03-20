@@ -124,7 +124,7 @@ services:
       - 10051:10051
 
 
-    peer0.org3.example.com:
+  peer0.org3.example.com:
     container_name: peer0.org3.example.com
     extends:
       file: peer-base.yaml

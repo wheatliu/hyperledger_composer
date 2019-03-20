@@ -167,7 +167,7 @@ function networkUp() {
       IMAGE_TAG=$IMAGETAG docker-compose -f $COMPOSE_FILE -f $COMPOSE_FILE_KAFKA up -d 2>&1
     else
       # IMAGE_TAG=$IMAGETAG docker-compose -f $COMPOSE_FILE -f docker-compose-e2e-template.yaml up -d 2>&1
-      IMAGE_TAG=$IMAGETAG docker-compose -f $COMPOSE_FILE up -d 2>&1
+      IMAGE_TAG=$IMAGETAG docker-compose -f $COMPOSE_FILE -f docker-compose-e2e-template.yaml up -d 2>&1
     fi
   fi
   if [ $? -ne 0 ]; then

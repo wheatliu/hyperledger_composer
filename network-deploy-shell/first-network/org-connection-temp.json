@@ -1,0 +1,13 @@
+"client": {
+    "organization": "Org1",
+    "connection": {
+        "timeout": {
+            "peer": {
+                "endorser": "300",
+                "eventHub": "300",
+                "eventReg": "300"
+            },
+            "orderer": "300"
+        }
+    }
+},
